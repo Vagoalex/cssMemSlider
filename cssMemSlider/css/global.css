@@ -1,0 +1,28 @@
+/* GLOBAL ELEMENTS */
+
+/* ============BODY STYLES================================================================================================ */
+body {
+	font-family: 'ComicSans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.25;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	color: #cc9933;
+}
+img {
+	max-width: 100%;
+}
+
+/* .container {
+	max-width: 1626px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+} */
+
+/* ============BODY STYLES END================================================================================================ */

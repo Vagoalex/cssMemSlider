@@ -1,0 +1,8 @@
+/* MAIN CSS SECTION */
+@import url('./normalize.css');
+@import url('./fonts.css');
+@import url('./global.css');
+@import url('./components/header.css');
+@import url('./components/main.css');
+@import url('./components/footer.css');
+@import url('./media/media.css');
