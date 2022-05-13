@@ -1,5 +1,102 @@
 /* ============MAIN STYLES================================================================================================ */
 
+.slider {	
+	width: 1100px;
+	height: 600px;
+	overflow: hidden;
+	background-color:#1d1d1d;
+	  border-radius: 5%;
+	padding: 1rem;
+}
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.navigation {
+	position: absolute;
+	bottom: 8%;
+	right: 1.5%;
+	display: flex;
+}
+.navigation__bar {
+	height: 15px;
+	width: 40px;
+	margin: 5px;
+	cursor: pointer;
+	background-color: #ddd;
+	opacity: 0.5;
+	border-radius: 10px;
+	transition: all 0.4s ease;
+}
+.navigation__bar:hover {
+	opacity: 0.9;
+	transform: scale(1.2);
+}
+.navigation__bar:active  {
+background-color: rgb(59, 58, 58)
+}
+
+input[name="rad"] {
+	position: absolute; 
+	visibility: hidden;
+}
+
+.slides {
+	width: 1100%;
+	height: 100%;
+	display: flex;
+}
+.slide {
+	width: 10%;
+	height: 500px;
+	transition: all 0.6s ease;
+}
+.slide:first-child {
+	margin-left: 0;
+}
+.slide__img {
+	width: 91%;
+	height: 100%;
+	border-radius: 5%;
+}
+.slide__desk {
+	margin-top: 10px;
+	font-size: 20px;
+	max-width: 500px;
+}
+
+#rad1:checked ~ .s1 {
+	margin-left: 0;
+}
+#rad2:checked ~ .s1 {
+	margin-left: -10%;
+}
+#rad3:checked ~ .s1 {
+	margin-left: -20%;
+}
+#rad4:checked ~ .s1 {
+	margin-left: -30%;
+}
+#rad5:checked ~ .s1 {
+	margin-left: -40%;
+}
+#rad6:checked ~ .s1 {
+	margin-left: -50%;
+}
+#rad7:checked ~ .s1 {
+	margin-left: -60%;
+}
+#rad8:checked ~ .s1 {
+	margin-left: -70%;
+}
+#rad9:checked ~ .s1 {
+	margin-left: -80%;
+}
+#rad10:checked ~ .s1 {
+	margin-left: -90%;
+}
 
 /* ============MAIN STYLES END================================================================================================
