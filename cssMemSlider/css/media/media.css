@@ -4,6 +4,9 @@
 		max-width: 900px;
 		height: 700px;
 	}
+	.slide__img {
+		height: 100%;
+	}
 	.navigation {
 		bottom: 6%;
 		right: 1.5%;
@@ -22,7 +25,10 @@
 @media (max-width: 992px) {
 	.slider {
 		max-width: 700px;
-		height: 900px;
+		height: 800px;
+	}
+	.slide__img {
+		height: 100%;
 	}
 	.navigation {
 		bottom: 6%;
@@ -45,7 +51,7 @@
 @media (max-width: 768px) {
 	.slider {
 		max-width: 500px;
-		height: 900px;
+		height: 800px;
 	}
 	.slide {
 		margin-top: 10px;
