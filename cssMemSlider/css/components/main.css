@@ -5,7 +5,7 @@
 	height: 600px;
 	overflow: hidden;
 	background-color:#1d1d1d;
-	  border-radius: 5%;
+	border-radius: 5%;
 	padding: 1rem;
 }
 .wrapper {
@@ -67,6 +67,8 @@ input[name="rad"] {
 	font-size: 20px;
 	max-width: 500px;
 }
+
+
 
 #rad1:checked ~ .s1 {
 	margin-left: 0;
