@@ -3,7 +3,6 @@
 	
 }
 .slider {	
-	
 	width: 1050px;
 	height: 770px;
 	overflow: hidden;
@@ -25,24 +24,36 @@
 	bottom: 3%;
 	right: 1%;
 	display: flex;
+	background-color: inherit;
 }
-.navigation__bar {
-	height: 35px;
-	width: 35px;
-	margin: 7px;
-	cursor: pointer;
-	background-color: #eaeaea;
-	opacity: 0.5;
-	border-radius: 50%;
-	transition: all 0.4s ease;
+
+.navigation .navigation__bar {
+  height: 4rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: inherit;
 }
-.navigation__bar:hover {
-	opacity: 0.9;
-	transform: scale(1.2);
+.navigation__bar > .navigation__bar--span {
+  background-color: #cc9933;
+  border: 0.1rem solid #000000;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  transition: background-color 0.6s, border 0.6s;
 }
-.navigation__bar:active  {
-background-color: rgb(59, 58, 58)
+.navigation__bar:hover > .navigation__bar--span {
+	background-color: #ffd900;
+	transform: scale(1.1);
+  border: 0.1rem solid #fff;
 }
+.navigation__bar:active > .navigation__bar--span {
+box-shadow: 0 0 1rem 1rem #fff;
+}
+
 
 input[name="rad"] {
 	position: absolute; 
@@ -68,12 +79,27 @@ input[name="rad"] {
 	border-radius: 5%;
 	transition: all 0.6s ease;
 	object-fit: fill;
+	border: 0.2rem solid #cc9933;
 }
 .slide__desk {
 	margin-top: 5px;
 	font-size: 26px;
 	max-width: 500px;
 	transition: all 0.6s ease;
+}
+
+#rad1:checked ~ .navigation #nav01 > .navigation__bar--span,
+#rad2:checked ~ .navigation #nav02 > .navigation__bar--span,
+#rad3:checked ~ .navigation #nav03 > .navigation__bar--span,
+#rad4:checked ~ .navigation #nav04 > .navigation__bar--span,
+#rad5:checked ~ .navigation #nav05 > .navigation__bar--span,
+#rad6:checked ~ .navigation #nav06 > .navigation__bar--span,
+#rad7:checked ~ .navigation #nav07 > .navigation__bar--span,
+#rad8:checked ~ .navigation #nav08 > .navigation__bar--span,
+#rad9:checked ~ .navigation #nav09 > .navigation__bar--span,
+#rad10:checked ~ .navigation #nav10 > .navigation__bar--span {
+  background-color: #000000;
+	border: 0.1rem solid #cc9933;
 }
 
 
@@ -107,6 +133,7 @@ input[name="rad"] {
 #rad10:checked ~ .s1 {
 	margin-left: -90%;
 }
+
 
 
 
